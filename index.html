@@ -14,7 +14,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start':'#FF8938',
+                'gradient-end': '#F00',
               }
             }
           }
@@ -56,7 +57,7 @@
       </div>
    </header>
    <main class="container mx-auto">
-      <!-- featured mx-auto -->
+      <!-- featured products -->
       <section class="text-center my-24">
         <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
         <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -64,7 +65,7 @@
       <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <!-- first card-->
         <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
-          <figure><img src="/images/tea-1.png" alt="Shoes" /></figure>
+          <figure><img src="/images/tea-1.png"></figure>
           <div class="card-body justify-center">
             <h2 class="text-2xl font-bold">Milk Tea</h2>
             <p>Creamer could be replaced by fresh milk</p>
@@ -72,7 +73,7 @@
         </div>
         <!-- second card-->
         <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
-          <figure><img src="/images/tea-2.png" alt="Shoes" /></figure>
+          <figure><img src="/images/tea-2.png"></figure>
           <div class="card-body justify-center">
             <h2 class="text-2xl font-bold">Black Tea</h2>
             <p>Creamer could be replaced by fresh milk</p>
@@ -80,7 +81,7 @@
         </div>
         <!-- third card-->
         <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
-          <figure><img src="/images/tea-3.png" alt="Shoes" /></figure>
+          <figure><img src="/images/tea-3.png"></figure>
           <div class="card-body justify-center">
             <h2 class="text-2xl font-bold">Lemon Tea</h2>
             <p>Creamer could be replaced by fresh milk</p>
@@ -88,7 +89,7 @@
         </div>
         <!-- fourth card-->
         <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
-          <figure><img src="/images/tea-4.png" alt="Shoes" /></figure>
+          <figure><img src="/images/tea-4.png"></figure>
           <div class="card-body justify-center">
             <h2 class="text-2xl font-bold">Green Tea</h2>
             <p>Creamer could be replaced by fresh milk</p>
@@ -118,7 +119,7 @@
         </div>
       </section>
       <!-- super client section -->
-      <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
         <div class="flex items-center lg:pr-28">
           <div class="space-y-5">
             <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -177,9 +178,92 @@
 
       </section>
 
-   </main>
-   <footer>
+      <!-- Events and news-->
 
-   </footer> 
+      <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-5">News & Events</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, 
+           the majority have suffered alteration in some form, by injected humour, 
+          or randomised words which don't look even slightly believable.
+        </p>
+        <!-- card container -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- first card-->
+          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
+            <figure><img src="/images/news-1.png"></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Collecting 8 points for discount</h2>
+              <p>There are many variations of passages of Lorem Ipsum available.</p>
+            </div>
+          </div>
+          <!-- second card-->
+          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
+            <figure><img src="/images/news-2.png"></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Collecting 8 points for discount</h2>
+              <p>There are many variations of passages of Lorem Ipsum available.</p>
+            </div>
+          </div>
+          <!-- third card-->
+          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to [#F4F4F4] shadow-xl">
+            <figure><img src="/images/news-3.png"></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">There are many variations of passages of Lorem Ipsum available.</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+   </main>
+
+    <footer class=" px-48 py-10 bg-base-200 text-base-content">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="">
+        <p>
+          <span>Ready to get strated?</span>
+          <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <!-- first column-->
+        <div>
+          <span class="footer-title">Quick Links</span> 
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Us</a> 
+          <a class="link link-hover">Insurance</a> 
+          <a class="link link-hover">Privacy Policy</a>
+        </div> 
+        <!-- second column-->
+        <div>
+          <span class="footer-title">Our Service</span> 
+          <a class="link link-hover">Life Insurance</a> 
+          <a class="link link-hover">Car Insurance</a> 
+          <a class="link link-hover">Health Insurance</a> 
+          <a class="link link-hover">House Insurance</a>
+        </div> 
+        <!-- third column-->
+        <div>
+          <span class="footer-title">Help</span> 
+          <a class="link link-hover">FAQs</a> 
+          <a class="link link-hover">Contact Us</a> 
+        </div> 
+        <!-- fourth column-->
+        <div>
+          <span class="footer-title">Subscribe to our <br> newsletter</span> 
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label> 
+            <div class="relative">
+              <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+              <button class="btn absolute text-white top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
 </body>
 </html>
